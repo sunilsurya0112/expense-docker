@@ -10,7 +10,7 @@ services:
     command: sh -c "sleep 10 && node /opt/backend/index.js"
     networks:
     - expense
-    conyainer_name: backend
+    container_name: backend
     depends_on: 
     - mysql
   # docker run -d --name mysql --network expense -v mysql:/var/lib/mysql mysql:1.0.0
